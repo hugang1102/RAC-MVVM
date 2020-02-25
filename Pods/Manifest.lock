@@ -1,7 +1,7 @@
 PODS:
   - Masonry (1.1.0)
   - MJExtension (3.0.15.1)
-  - ReactiveObjC (3.1.0)
+  - ReactiveObjC (3.1.1)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
@@ -20,9 +20,9 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
-  ReactiveObjC: 2a38ea15335de4119d8b17caf1db1484f61db902
+  ReactiveObjC: 011caa393aa0383245f2dcf9bf02e86b80b36040
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
 PODFILE CHECKSUM: 054ea56b15060d2d68d9dacade51e15eb59e44ce
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.7.4

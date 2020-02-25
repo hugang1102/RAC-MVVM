@@ -34,6 +34,7 @@
 		FB6E2A8220F844E1004B24AA /* LGNMineNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6E2A8120F844E1004B24AA /* LGNMineNavigationController.m */; };
 		FB6E2A8520F844F5004B24AA /* LGNCategoryNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6E2A8420F844F5004B24AA /* LGNCategoryNavigationController.m */; };
 		FB6E2A8820F84508004B24AA /* LGNProductNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB6E2A8720F84508004B24AA /* LGNProductNavigationController.m */; };
+		FBF2AEF923585E42003E3F2F /* LGNUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF2AEF823585E42003E3F2F /* LGNUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -95,6 +96,8 @@
 		FB6E2A8420F844F5004B24AA /* LGNCategoryNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNCategoryNavigationController.m; sourceTree = "<group>"; };
 		FB6E2A8620F84508004B24AA /* LGNProductNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNProductNavigationController.h; sourceTree = "<group>"; };
 		FB6E2A8720F84508004B24AA /* LGNProductNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNProductNavigationController.m; sourceTree = "<group>"; };
+		FBF2AEF723585E42003E3F2F /* LGNUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LGNUtils.h; sourceTree = "<group>"; };
+		FBF2AEF823585E42003E3F2F /* LGNUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LGNUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,7 @@
 		FB2E68A620F4BA9900D89F2A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				FBF2AEF623585E25003E3F2F /* Classes */,
 				FB6E2A6720F83BC8004B24AA /* Macros */,
 				FB6E2A6620F83BB0004B24AA /* Category */,
 			);
@@ -357,6 +361,15 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		FBF2AEF623585E25003E3F2F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				FBF2AEF723585E42003E3F2F /* LGNUtils.h */,
+				FBF2AEF823585E42003E3F2F /* LGNUtils.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,7 +444,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-RACDemo/Pods-RACDemo-resources.sh",
 				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -440,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RACDemo/Pods-RACDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A9EEE2B2E9D6BED54E19C5FD /* [CP] Check Pods Manifest.lock */ = {
@@ -481,6 +494,7 @@
 				FB5E3BB820F75EE000F52C68 /* LGNHUDManager.m in Sources */,
 				FB2E689420F495F400D89F2A /* ViewController.m in Sources */,
 				FB5E3B9920F746AD00F52C68 /* LGNBaseNavigationController.m in Sources */,
+				FBF2AEF923585E42003E3F2F /* LGNUtils.m in Sources */,
 				FB2E689F20F495F400D89F2A /* main.m in Sources */,
 				FB6E2A7420F83F9F004B24AA /* LGNCategoryViewController.m in Sources */,
 				FB5E3B7C20F7342E00F52C68 /* UIImage+CreateImage.m in Sources */,

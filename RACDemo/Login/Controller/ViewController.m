@@ -116,7 +116,7 @@ const NSInteger CountdownNumber = 5;
                                                    self.loginView.passwordTF.rac_textSignal,
                                                    self.loginView.verifycodeTF.rac_textSignal]
                                           reduce:^id _Nullable(NSString *username, NSString * password, NSString *verifyCode){
-                                              return @([username verifyUsernameText] && [password verifyPasswordText] && (verifyCode.length == 4));
+                                              return @([username verifyUsernameText] && [password verifyPasswordText] && (verifyCode.length > 0));
 
     }];
     
@@ -124,6 +124,7 @@ const NSInteger CountdownNumber = 5;
     [[self.loginView.loginBtn rac_signalForControlEvents:UIControlEventTouchUpInside] subscribeNext:^(__kindof UIControl * _Nullable x) {
         
         [SVProgressHUD show];
+        [self.view endEditing:YES];
         
         NSDictionary *dic = @{
                               @"username" : self.loginView.usernameTF.text,

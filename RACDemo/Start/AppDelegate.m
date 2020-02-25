@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LGNRootTabBarController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,7 @@
     self.window = [[UIWindow alloc] initWithFrame:kScreenBounds];
     self.window.backgroundColor = [UIColor whiteColor];
     LGNRootTabBarController *tab = [[LGNRootTabBarController alloc] init];
-    self.window.rootViewController = tab;
+    self.window.rootViewController = [ViewController new];
     [self.window makeKeyAndVisible];
     
     return YES;
